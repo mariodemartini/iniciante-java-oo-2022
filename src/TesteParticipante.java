@@ -16,6 +16,7 @@ public class TesteParticipante {
 		og1.setSenha(123);
 		
 		System.out.println(og1.autentica(123));
+				
 		
 	}
 }
