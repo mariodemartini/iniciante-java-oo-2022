@@ -6,7 +6,7 @@ public class TesteParticipante {
 		ap1.setFormacao("estudante TI");
 		ap1.setNome("Henrique");
 		
-		System.out.println("Particando do Movimento Codar: " + ap1.getNome() + ", " + ap1.getFormacao());
+		System.out.println("Participante do Movimento Codar: " + ap1.getNome() + ", " + ap1.getFormacao());
 		
 		Mentor mentor = new Mentor();
 		mentor.setNome("Nico");
