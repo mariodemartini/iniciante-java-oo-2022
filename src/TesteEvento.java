@@ -2,10 +2,9 @@
 public class TesteEvento {
 
 	public static void main(String[] args) {
-		Evento primeiroCurso = new Curso(19, 21);
-		primeiroCurso.setTema("Métodos Java");
-		
-		System.out.println(primeiroCurso.getTema());
+		Evento primeiroCurso = new Curso(19, 21, "Jogos");
+				
+		System.out.println("Assunto do primeiro curso: " + primeiroCurso.getTema());
 	
 		Participante novo = new Aprendiz();
 		novo.setNome("Mario de Martini");
@@ -13,18 +12,10 @@ public class TesteEvento {
 		novo.setIdade(34);
 		novo.setFuncao("aluno");
 			
-		Evento eventoDoMario = new Desafio(19, 21);
-		eventoDoMario.setTema("Polimorfismo");
-		eventoDoMario.setMembro(novo);
+		Evento primeiroDesafio = new Desafio(19, 21, "Jogo da Velha");
 		
-		System.out.println(eventoDoMario.getMembro().getNome());
-		System.out.println(eventoDoMario.getMembro());
-		
-		
-		System.out.println(novo.getNome() + ", " + novo.getFuncao());
-		System.out.println(novo);
-		
-		
+		System.out.println("Tema do Desafio: " + primeiroDesafio.getTema());
+		System.out.println("Dia de inicio: " + primeiroDesafio.getInicio() + " Dia da entrega: " + primeiroDesafio.getFim());
 				
 	}
 }

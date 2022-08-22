@@ -1,22 +1,22 @@
 
 public class Aprendiz extends Participante {
 	
-	private String participacurso;
-	private String compartilharmaterial;
+	private String participaeventos;
+	private String compartilhar;
 	private String resolverdesafios;
 	private String duvidas;
 	
-	public String getParticipacurso() {
-		return participacurso;
+	public String getParticipaeventos() {
+		return participaeventos;
 	}
-	public void setParticipacurso(String participacurso) {
-		this.participacurso = participacurso;
+	public void setParticipaeventos(String participaeventos) {
+		this.participaeventos = participaeventos;
 	}
-	public String getCompartilharmaterial() {
-		return compartilharmaterial;
+	public String getCompartilhar() {
+		return compartilhar;
 	}
-	public void setCompartilharmaterial(String compartilharmaterial) {
-		this.compartilharmaterial = compartilharmaterial;
+	public void setCompartilhar(String compartilhar) {
+		this.compartilhar = compartilhar;
 	}
 	public String getResolverdesafios() {
 		return resolverdesafios;

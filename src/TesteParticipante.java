@@ -14,8 +14,5 @@ public class TesteParticipante {
 		org1.setFuncao("Organizador");
 		org1.setNome("Maria");
 				
-		
-		System.out.println(org1.getNome() + " tem a função de " + org1.getFuncao() + " pode organizar o evento: " + org1.setCriaEvento("Palestra"));
-		System.out.println();
 	}
 }

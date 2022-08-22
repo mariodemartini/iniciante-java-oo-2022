@@ -1,56 +1,49 @@
 
 public class Mentor extends Participante implements Lider{
 
-	private String ministrar;
-	private String auxiliotecnico;
-	private Evento criardesafios;
-	private Evento corrigirdesafios;
-	private int senha;
+	private String ministraEventos;
+	private String auxilioTecnico;
+	private String criaDesafios;
+	private String revisaDesafios;
 	
-	public String getMinistrar() {
-		return ministrar;
-	}
-	public void setMinistrar(String ministrar) {
-		this.ministrar = ministrar;
-	}
-	
-	public String getAuxiliotecnico() {
-		return auxiliotecnico;
-	}
-	public void setAuxiliotecnico(String auxiliotecnico) {
-		this.auxiliotecnico = auxiliotecnico;
-	}
-	
-	public Evento getCriardesafios() {
-		return criardesafios;
-	}
-	public void setCriardesafios(Evento criardesafios) {
-		this.criardesafios = criardesafios;
-	}
-	public Evento getCorrigirdesafios() {
-		return corrigirdesafios;
-	}
-	public void setCorrigirdesafios(Evento corrigirdesafios) {
-		this.corrigirdesafios = corrigirdesafios;
+	@Override
+	public void setCriaEventos(String tipo) {
+		this.setCriaEventos(tipo);
 	}
 
-	@Override
-	public void setSenha(int senha) {
-		this.senha = senha;
-		
+	public String getMinistraEventos() {
+		return ministraEventos;
 	}
-	@Override
-	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
+
+	public void setMinistraEventos(String ministraEventos) {
+		this.ministraEventos = ministraEventos;
 	}
-	@Override
-	public boolean setCriaEvento(String tema) {
-		return true;
-		
+
+	public String getAuxilioTecnico() {
+		return auxilioTecnico;
 	}
+
+	public void setAuxilioTecnico(String auxilioTecnico) {
+		this.auxilioTecnico = auxilioTecnico;
+	}
+
+	public String getCriaDesafios() {
+		return criaDesafios;
+	}
+
+	public void setCriaDesafios(String criaDesafios) {
+		this.criaDesafios = criaDesafios;
+	}
+
+	public String getRevisaDesafios() {
+		return revisaDesafios;
+	}
+
+	public void setRevisaDesafios(String revisaDesafios) {
+		this.revisaDesafios = revisaDesafios;
+	}
+	
+	
+	
 
 }

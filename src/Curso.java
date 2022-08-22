@@ -1,36 +1,28 @@
 
 public class Curso extends Evento {
 
-	private Mentor mentor;
-	private int numeroaulas;
-	private Aprendiz aprendiz;
+	private String aulas;
+	private String artigos;
 	
-	public Curso(int inicio, int fim) {
-		super(inicio, fim);
+	public Curso(int inicio, int fim, String tema) {
+		super(inicio, fim, tema);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String getAulas() {
+		return aulas;
 	}
 
-	public Mentor getMentor() {
-		return mentor;
+	public void setAulas(String aulas) {
+		this.aulas = aulas;
 	}
 
-	public void setMentor(Mentor mentor) {
-		this.mentor = mentor;
+	public String getArtigos() {
+		return artigos;
 	}
 
-	public int getNumeroaulas() {
-		return numeroaulas;
+	public void setArtigos(String artigos) {
+		this.artigos = artigos;
 	}
-
-	public void setNumeroaulas(int numeroaulas) {
-		this.numeroaulas = numeroaulas;
-	}
-
-	public Aprendiz getAprendiz() {
-		return aprendiz;
-	}
-
-	public void setAprendiz(Aprendiz aprendiz) {
-		this.aprendiz = aprendiz;
-	}
-
+	
 }

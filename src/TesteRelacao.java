@@ -10,18 +10,18 @@ public class TesteRelacao {
 		Mentor novomentor = new Mentor();
 		novomentor.setNome("João");
 		novomentor.setFuncao("Mentor");
-		novomentor.setMinistrar("Curso Java");
-		novomentor.setAuxiliotecnico("usar new para instaciar objeto.");
+		novomentor.setMinistraEventos("Curso Java");
+		novomentor.setAuxilioTecnico("usar new para instaciar objeto.");
 		
-		Evento novocurso = new Curso(20, 22);
+		Evento novocurso = new Curso(20, 22, "Polimorfismo");
 		novocurso.setTema("Objeto Java"); 
-		novocurso.setMembro(aprendiz01);
-		novocurso.setMembro(novomentor);
-		
+		novocurso.setLider(novomentor);
+		novocurso.setAprendiz(aprendiz01);
+				
 		System.out.println("Curso da semana: " + novocurso.getTema());
 		System.out.println("Inicio: " + novocurso.getInicio() + " Fim: " + novocurso.getFim());
 		System.out.println("Participante: " + aprendiz01.getNome() + ", Professor: " + novomentor.getNome());
-		System.out.println("Duvida: " + aprendiz01.getDuvidas() + " Resposta: " + novomentor.getAuxiliotecnico());
+		System.out.println("Duvida: " + aprendiz01.getDuvidas() + " Resposta: " + novomentor.getAuxilioTecnico());
 		
 		
 	}

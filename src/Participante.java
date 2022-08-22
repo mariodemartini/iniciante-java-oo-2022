@@ -4,7 +4,7 @@ public abstract class Participante {
 	private String nome;
 	private int idade;
 	private String cpf;
-	private String funcao;
+	private String formacao;
 	
 	public String getNome() {
 		return nome;
@@ -25,10 +25,10 @@ public abstract class Participante {
 		this.cpf = cpf;
 	}
 	public String getFuncao() {
-		return funcao;
+		return formacao;
 	}
 	public void setFuncao(String funcao) {
-		this.funcao = funcao;
+		this.formacao = funcao;
 	}
 	
 }
