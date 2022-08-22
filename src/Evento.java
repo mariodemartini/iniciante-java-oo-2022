@@ -2,11 +2,11 @@
 public abstract class Evento {
 
 	private String tema;
-	private Participante lider;
-	private Aprendiz aprendiz;
 	private int inicio;
 	private int fim;
 	private static int total = 0;
+	private Participante lider;
+	private Participante aprendiz;
 	
 	public Evento(int inicio, int fim, String tema) {
 		Evento.total++;
@@ -21,14 +21,6 @@ public abstract class Evento {
 
 	public void setTema(String tema) {
 		this.tema = tema;
-	}
-
-	public Participante getLider() {
-		return lider;
-	}
-
-	public void setLider(Participante lider) {
-		this.lider = lider;
 	}
 
 	public int getInicio() {
@@ -47,16 +39,24 @@ public abstract class Evento {
 		this.fim = fim;
 	}
 
-	public Aprendiz getAprendiz() {
+	public static int getTotal() {
+		return total;
+	}
+
+	public Participante getLider() {
+		return lider;
+	}
+
+	public void setLider(Participante lider) {
+		this.lider = lider;
+	}
+
+	public Participante getAprendiz() {
 		return aprendiz;
 	}
 
-	public void setAprendiz(Aprendiz aprendiz) {
+	public void setAprendiz(Participante aprendiz) {
 		this.aprendiz = aprendiz;
-	}
-
-	public static int getTotal() {
-		return total;
 	}
 	
 }
