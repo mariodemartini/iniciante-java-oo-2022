@@ -3,13 +3,13 @@ public class TesteRelacao {
 
 	public static void main(String[] args) {
 		Aprendiz aprendiz01 = new Aprendiz();
-		aprendiz01.setNome("Juca");
-		aprendiz01.setFuncao("Aluno");
+		aprendiz01.setNome("Mario");
+		aprendiz01.setFormacao("Aluno de TI");
 		aprendiz01.setDuvidas("como instanciar objetos?");
 		
 		Mentor novomentor = new Mentor();
 		novomentor.setNome("João");
-		novomentor.setFuncao("Mentor");
+		novomentor.setFormacao("Back-end");
 		novomentor.setMinistraEventos("Curso Java");
 		novomentor.setAuxilioTecnico("usar new para instaciar objeto.");
 		

@@ -10,7 +10,7 @@ public class TesteEvento {
 		novo.setNome("Mario de Martini");
 		novo.setCpf("222.222.222-22");
 		novo.setIdade(34);
-		novo.setFuncao("aluno");
+		novo.setFormacao("aluno de TI");
 			
 		Evento primeiroDesafio = new Desafio(19, 21, "Jogo da Velha");
 		

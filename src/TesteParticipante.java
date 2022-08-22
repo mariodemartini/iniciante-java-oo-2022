@@ -2,17 +2,17 @@
 public class TesteParticipante {
 
 	public static void main(String[] args) {
-		Aprendiz ap1 = new Aprendiz();
-		ap1.setFuncao("Aluno");
+		Participante ap1 = new Aprendiz();
+		ap1.setFormacao("estudante TI");
 		ap1.setNome("Henrique");
 		
-		Mentor m1 = new Mentor();
-		m1.setFuncao("Mentor");
-		m1.setNome("Nico"); 
+		System.out.println("Particando do Movimento Codar: " + ap1.getNome() + ", " + ap1.getFormacao());
 		
-		Organizador org1 = new Organizador();
-		org1.setFuncao("Organizador");
-		org1.setNome("Maria");
+		Mentor mentor = new Mentor();
+		mentor.setNome("Nico");
+		mentor.setCriaDesafios("Desafio Java");
+		
+		System.out.println("O mentor " + mentor.getNome() + " criou o evento do tipo " + mentor.getCriaDesafios());
 				
 	}
 }

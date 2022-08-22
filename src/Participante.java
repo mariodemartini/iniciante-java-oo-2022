@@ -24,11 +24,11 @@ public abstract class Participante {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	public String getFuncao() {
+	public String getFormacao() {
 		return formacao;
 	}
-	public void setFuncao(String funcao) {
-		this.formacao = funcao;
+	public void setFormacao(String formacao) {
+		this.formacao = formacao;
 	}
 	
 }

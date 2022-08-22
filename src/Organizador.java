@@ -1,12 +1,8 @@
 
-public class Organizador extends Participante implements Lider {
+public class Organizador extends Participante {
 
 	private String auxilioRegras;
-
-	@Override
-	public void setCriaEventos(String tipo) {
-		this.setCriaEventos(tipo);		
-	}
+	private String criaEventos;
 
 	public String getAuxilioRegras() {
 		return auxilioRegras;
@@ -14,6 +10,14 @@ public class Organizador extends Participante implements Lider {
 
 	public void setAuxilioRegras(String auxilioRegras) {
 		this.auxilioRegras = auxilioRegras;
+	}
+
+	public String getCriaEventos() {
+		return criaEventos;
+	}
+
+	public void setCriaEventos(String criaEventos) {
+		this.criaEventos = criaEventos;
 	}   
       
 }

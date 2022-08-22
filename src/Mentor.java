@@ -1,16 +1,11 @@
 
-public class Mentor extends Participante implements Lider{
+public class Mentor extends Participante {
 
 	private String ministraEventos;
 	private String auxilioTecnico;
 	private String criaDesafios;
 	private String revisaDesafios;
 	
-	@Override
-	public void setCriaEventos(String tipo) {
-		this.setCriaEventos(tipo);
-	}
-
 	public String getMinistraEventos() {
 		return ministraEventos;
 	}
