@@ -1,9 +1,11 @@
 
-public class Mentor extends Lider{
+public class Mentor extends Participante implements Lider{
 
 	private String ministrar;
-	private String criardesafios;
-	private String corrigirdesafios;
+	private String auxiliotecnico;
+	private Evento criardesafios;
+	private Evento corrigirdesafios;
+	private int senha;
 	
 	public String getMinistrar() {
 		return ministrar;
@@ -11,16 +13,42 @@ public class Mentor extends Lider{
 	public void setMinistrar(String ministrar) {
 		this.ministrar = ministrar;
 	}
-	public String getCriardesafios() {
+	
+	public String getAuxiliotecnico() {
+		return auxiliotecnico;
+	}
+	public void setAuxiliotecnico(String auxiliotecnico) {
+		this.auxiliotecnico = auxiliotecnico;
+	}
+	
+	public Evento getCriardesafios() {
 		return criardesafios;
 	}
-	public void setCriardesafios(String criardesafios) {
+	public void setCriardesafios(Evento criardesafios) {
 		this.criardesafios = criardesafios;
 	}
-	public String getCorrigirdesafios() {
+	public Evento getCorrigirdesafios() {
 		return corrigirdesafios;
 	}
-	public void setCorrigirdesafios(String corrigirdesafios) {
+	public void setCorrigirdesafios(Evento corrigirdesafios) {
 		this.corrigirdesafios = corrigirdesafios;
 	}
+	@Override
+	public boolean setCriaEvento(String evento) {
+		return true;
+	}
+	@Override
+	public void setSenha(int senha) {
+		this.senha = senha;
+		
+	}
+	@Override
+	public boolean autentica(int senha) {
+		if (this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }

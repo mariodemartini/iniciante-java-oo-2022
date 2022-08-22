@@ -10,13 +10,12 @@ public class TesteParticipante {
 		m1.setFuncao("Mentor");
 		m1.setNome("Nico"); 
 		
-		Lider og1 = new Organizador();
-		og1.setFuncao("RH");
-		og1.setNome("Maria");
-		og1.setSenha(123);
+		Organizador org1 = new Organizador();
+		org1.setCriaEvento("Palestra");
 		
-		System.out.println(og1.autentica(123));
-				
+		Palestra palestra = new Palestra(22, 22);
+		palestra.setTema("Herança Java");
+		
 		
 	}
 }

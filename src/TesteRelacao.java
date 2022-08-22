@@ -11,7 +11,7 @@ public class TesteRelacao {
 		novomentor.setNome("Linux");
 		novomentor.setFuncao("Mentor");
 		novomentor.setMinistrar("Curso Java");
-		novomentor.setAuxilioaprendiz("usar new para instaciar objeto.");
+		novomentor.setAuxiliotecnico("usar new para instaciar objeto.");
 		
 		Evento novocurso = new Curso(20, 22);
 		novocurso.setTema("Objeto Java"); 
@@ -21,7 +21,7 @@ public class TesteRelacao {
 		System.out.println("Curso da semana: " + novocurso.getTema());
 		System.out.println("Inicio: " + novocurso.getInicio() + " Fim: " + novocurso.getFim());
 		System.out.println("Participante: " + aprendiz01.getNome() + ", Professor: " + novomentor.getNome());
-		System.out.println("Duvida: " + aprendiz01.getDuvidas() + " Resposta: " + novomentor.getAuxilioaprendiz());
+		System.out.println("Duvida: " + aprendiz01.getDuvidas() + " Resposta: " + novomentor.getAuxiliotecnico());
 		
 		
 	}
