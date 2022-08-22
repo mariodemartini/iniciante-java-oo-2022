@@ -33,10 +33,7 @@ public class Mentor extends Participante implements Lider{
 	public void setCorrigirdesafios(Evento corrigirdesafios) {
 		this.corrigirdesafios = corrigirdesafios;
 	}
-	@Override
-	public boolean setCriaEvento(String evento) {
-		return true;
-	}
+
 	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
@@ -49,6 +46,11 @@ public class Mentor extends Participante implements Lider{
 		} else {
 			return false;
 		}
+	}
+	@Override
+	public boolean setCriaEvento(String tema) {
+		return true;
+		
 	}
 
 }

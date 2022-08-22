@@ -20,11 +20,6 @@ public class Organizador extends Participante implements Lider {
 	public void setAuxilioaprendiz(String auxilioaprendiz) {
 		this.auxilioaprendiz = auxilioaprendiz;
 	}
-
-	@Override
-	public boolean setCriaEvento(String evento) {
-		return true;		
-	}
 	
 	@Override
 	public void setSenha(int senha) {
@@ -40,6 +35,9 @@ public class Organizador extends Participante implements Lider {
 		}
 	}
 
+	@Override
+	public boolean setCriaEvento(String tema) {
+		return true;
+	}
 
-	
 }

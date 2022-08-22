@@ -11,11 +11,11 @@ public class TesteParticipante {
 		m1.setNome("Nico"); 
 		
 		Organizador org1 = new Organizador();
-		org1.setCriaEvento("Palestra");
+		org1.setFuncao("Organizador");
+		org1.setNome("Maria");
+				
 		
-		Palestra palestra = new Palestra(22, 22);
-		palestra.setTema("Herança Java");
-		
-		
+		System.out.println(org1.getNome() + " tem a função de " + org1.getFuncao() + " pode organizar o evento: " + org1.setCriaEvento("Palestra"));
+		System.out.println();
 	}
 }

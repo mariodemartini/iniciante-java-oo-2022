@@ -1,7 +1,7 @@
 
 public interface Lider {
 
-	public abstract boolean setCriaEvento(String evento);
+	public abstract boolean setCriaEvento(String tema);
 	
 	public abstract void setSenha(int senha);
 	

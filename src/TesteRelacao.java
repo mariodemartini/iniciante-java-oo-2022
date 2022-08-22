@@ -8,7 +8,7 @@ public class TesteRelacao {
 		aprendiz01.setDuvidas("como instanciar objetos?");
 		
 		Mentor novomentor = new Mentor();
-		novomentor.setNome("Linux");
+		novomentor.setNome("João");
 		novomentor.setFuncao("Mentor");
 		novomentor.setMinistrar("Curso Java");
 		novomentor.setAuxiliotecnico("usar new para instaciar objeto.");
